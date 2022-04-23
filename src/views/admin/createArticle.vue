@@ -1,3 +1,4 @@
+
 <template>
  <adminmenu/>
  <form class="row g-3">
@@ -52,6 +53,7 @@ export default {
     data(){
         return{
             artcile:{
+               id: Date(),
                heading: '',
                content: '',
                autor: '',
@@ -59,7 +61,6 @@ export default {
                description: '',
                dateArticle: ' '
             }
-
         }
     },
     methods:{
@@ -68,7 +69,6 @@ export default {
         }
     }
 }
-
 </script>
 
 <style scoped>

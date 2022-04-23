@@ -29,10 +29,17 @@ export default createStore({
   actions: {
   },
   getters:{
-      getArticle: state => {
-        return state.article
+      getArticle: state => (id) =>{
+        console.log(id)
+      /* for(let i = 0; i < state.article.length; i++){
+          console.log(state.article[i].id)
+          if(state.article[i].id == id){
+        return state.article[i]
       }
-  },
+    }*/
+    return state.article.find(art => art.id == id)
+  }
+},
   modules: {
   }
 })

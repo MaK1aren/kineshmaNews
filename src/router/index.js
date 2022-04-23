@@ -50,6 +50,12 @@ const routes = [
     component: createArticle
   },
   {
+    path:'/article/:id',
+    name:'/article',
+    component: article,
+    props: true,
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
